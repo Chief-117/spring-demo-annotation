@@ -14,7 +14,7 @@ public class ScanAnnotationDemoApp {
 //		System.out.println(s1.getTutoring());
 		System.out.println(s1.getTutoring());
 		System.out.println(test.getTutoring());
-		
+//		
 		context.close();
 	}
 
