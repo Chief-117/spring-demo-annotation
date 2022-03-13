@@ -1,0 +1,2 @@
+>> This is Spring & Hibernate Activity #6 << 
+>> Congratulations ! You did it. <<
