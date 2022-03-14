@@ -1,9 +1,12 @@
 package com.scan.springdemo;
 
 import org.springframework.beans.factory.annotation.Value;
-
-public class ChineseTeacher implements Teacher {
+import org.springframework.stereotype.Component;
+@Component
+public class PracticeTeacher implements Teacher {
 	
+//	@Autowired
+//	@Qualifier(value="practiceTutoringService")
 	private TutoringService tutoringService;
 	
 	@Value("${foo.email}")
@@ -15,22 +18,24 @@ public class ChineseTeacher implements Teacher {
 	public String getEmail() {
 		return email;
 	}
+
 	public String getTeam() {
 		return team;
 	}
-	public ChineseTeacher(TutoringService thetutoringService) {
-		tutoringService = thetutoringService;
+
+	public PracticeTeacher(PracticeTutoringService thepractiveTutoringService) {
+		tutoringService = thepractiveTutoringService;
 	}
+
 	@Override
 	public String subject() {
-		// TODO Auto-generated method stub
-		return "Chinese";
+		return "Practivity#7 Teacher.subject";
 	}
 
 	@Override
 	public String getTutoring() {
-		// TODO Auto-generated method stub
 		return tutoringService.getTutoring();
 	}
-
+	
+	
 }

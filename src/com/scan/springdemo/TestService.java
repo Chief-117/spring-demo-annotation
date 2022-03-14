@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class TestService implements TutoringService {
 	
-	private String fileName = "C:\\JavaFramework\\eclipse-workspace\\spring-demo-annotation\\src\\fortune-data.txt";
+	private String fileName = "C:\\users\\user\\eclipse-workspace\\spring-demo-annotation\\src\\fortune-data.txt";
 	private List<String> theFortunes;
 
 	// create a random number generator

@@ -10,8 +10,8 @@ public class ChineseTeacherDemoApp {
 			new AnnotationConfigApplicationContext(MonthlySalary.class);
 //	Teacher s1 = context.getBean("xxx", Teacher.class);
 	
-	Teacher theChinese = context.getBean("chineseTeacher", Teacher.class);
-	System.out.println(theChinese);
+	ChineseTeacher theChinese = context.getBean("chineseTeacher", ChineseTeacher.class);
+	System.out.println("email from PropertySource : "+theChinese.getEmail());
 //	System.out.println(s1.getTutoring());
 //	System.out.println(s1.getTutoring());
 	System.out.println(theChinese.getTutoring());
